@@ -167,7 +167,7 @@ def get_system_build_environment():
             continue
 
         if not separator_points:
-            print_fatal(f'Did not find separator line while parsing dpkg output!')
+            print_fatal('Did not find separator line while parsing dpkg output!')
 
         # Some of these fields are not needed, but are left in incase we want to track that in the future.
         # status = line[:separator_points[0]].strip()
